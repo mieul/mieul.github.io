@@ -65,6 +65,10 @@
       padding-bottom: 10px;
     }
 
+    h3 {
+      margin-bottom: 8px;
+    }
+
     p {
       font-family: system-ui, sans-serif;
       line-height: 1.6;
@@ -78,12 +82,21 @@
 
     .project {
       background: rgba(0,0,0,0.05);
-      padding: 20px;
-      border-radius: 10px;
+      padding: 16px;
+      border-radius: 12px;
     }
 
     body.dark .project {
       background: rgba(255,255,255,0.08);
+    }
+
+    /* 프로젝트 이미지 */
+    .project img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      display: block;
     }
 
     footer {
@@ -94,7 +107,7 @@
     }
 
     /* =========================
-       Toggle Switch (Converted)
+       Toggle Switch
     ========================= */
     .toggle-wrap {
       position: fixed;
@@ -172,6 +185,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <!-- Dark Mode Toggle -->
@@ -200,14 +214,19 @@
   <section>
     <h2>Projects</h2>
     <div class="projects">
+
       <div class="project">
+        <img src="images/사본 -strategy (1).png" alt="Project One 이미지">
         <h3>Project One</h3>
         <p>포트폴리오 웹사이트 제작</p>
       </div>
+
       <div class="project">
+        <img src="images/사본 -strategy (1).png" alt="Project Two 이미지">
         <h3>Project Two</h3>
         <p>다크모드 UI 실험</p>
       </div>
+
     </div>
   </section>
 
@@ -222,5 +241,6 @@
       document.body.classList.toggle("dark", toggle.checked);
     });
   </script>
+
 </body>
 </html>
